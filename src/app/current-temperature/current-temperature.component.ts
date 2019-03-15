@@ -1,14 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, OnDestroy } from '@angular/core';
 import { LocationService } from '../services/location.service'
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'app-five-day-forecast',
-  templateUrl: './five-day-forecast.component.html',
-  styleUrls: ['./five-day-forecast.component.css'],
+  selector: 'app-current-temperature',
+  templateUrl: './current-temperature.component.html',
+  styleUrls: ['./current-temperature.component.css'],
   providers: [ LocationService ]
 })
-export class FiveDayForecastComponent implements OnInit {
+
+export class CurrentTemperatureComponent implements OnInit, OnDestroy {
   private latitude: number;
   private longitude: number;
   private currentLocation: Subscription;

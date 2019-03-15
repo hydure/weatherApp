@@ -1,5 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <a class="navbar-brand" href="#"><img style="height:50px;width:50px;"src="../../assets/logo.png">Weather Forecaster</a>
+  <a class="navbar-brand active" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+    <img style="height:50px;width:50px;"src="../../assets/logo.png">Weather Forecaster
+  </a>
   <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarItems" aria-expanded="false" aria-controls="navbarItems" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -7,11 +9,14 @@
   <div class="collapse navbar-collapse" id="navbarItems">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Current Day <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="/current" routerLinkActive="active">Current Day</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Five Day Forecast</a>
+      <li class="nav-item active">
+        <a class="nav-link" [routerLink]="['/forecast']" routerLinkActive="active">Five Day Forecast</a>
       </li>
     </ul>
   </div>
 </nav>
+
+<!-- Allows us to use the routes we created above. -->
+<router-outlet></router-outlet>
