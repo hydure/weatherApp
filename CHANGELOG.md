@@ -10,7 +10,7 @@ Lines        : 80.33% ( 49/61 )`
 
 ## Changed
 - took out an unnecessary script in `index.html`
-
+- Deleted Protractor e2e test case
 
 ## [0.0.3] 2019 - 04 - 16
 ## Added
