@@ -1,5 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { CurrentTemperatureComponent } from './current-temperature.component';
 
 describe('CurrentTemperatureComponent', () => {
@@ -8,18 +8,19 @@ describe('CurrentTemperatureComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ HttpClientTestingModule ],
       declarations: [ CurrentTemperatureComponent ]
     })
     .compileComponents();
   }));
 
-  beforeEach(() => {
+  beforeEach((): any => {
     fixture = TestBed.createComponent(CurrentTemperatureComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create', (): any => {
     expect(component).toBeTruthy();
   });
 });

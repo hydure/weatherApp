@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.0.0] 2019 - 04 - 16
+## Added
+- Karma testing services to every component and service `spec.ts` file to achieve the following coverage summary:
+`Statements   : 83.1% ( 59/71 )
+Branches     : 100% ( 0/0 )
+Functions    : 76.92% ( 20/26 )
+Lines        : 80.33% ( 49/61 )`
+
+## Changed
+- took out an unnecessary script in `index.html`
+
+
 ## [0.0.3] 2019 - 04 - 16
 ## Added
 - `weather.service` to get user's location

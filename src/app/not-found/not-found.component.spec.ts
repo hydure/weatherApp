@@ -13,13 +13,13 @@ describe('NotFoundComponent', () => {
     .compileComponents();
   }));
 
-  beforeEach(() => {
+  beforeEach((): any => {
     fixture = TestBed.createComponent(NotFoundComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create', (): any => {
     expect(component).toBeTruthy();
   });
 });

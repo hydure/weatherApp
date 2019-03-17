@@ -29,7 +29,7 @@ const appRoutes: Routes = [
     FiveDayForecastComponent,
     NavbarComponent,
     HomeComponent,
-    NotFoundComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
