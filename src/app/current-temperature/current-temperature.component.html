@@ -1,1 +1,10 @@
-{{ latitude }}
+<div class="container">
+    <div *ngIf="!currentWeather">
+        Please wait while we get your location...
+    </div>
+    <div *ngIf="currentWeather">
+        <h1>It is currently {{ currentWeather.main.temp }} degrees Fahrenheit at your location.</h1>
+        <h2>The high will be {{ currentWeather.main.temp_max }}, with a low of {{ currentWeather.main.temp_min}}.</h2>
+        <h3>You are currently located at ({{ latitude }}, {{ longitude}}), located within the city of {{ currentWeather.name }}.</h3>
+    </div>
+</div>

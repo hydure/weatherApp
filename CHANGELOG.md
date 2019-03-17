@@ -1,11 +1,18 @@
 # Changelog
 
+## [0.0.3] 2019 - 04 - 16
+## Added
+- `weather.service` to get user's location
+- weather display for `current-temperature` component
+- table of forecasted weather for `five-day-forecast- component
+
+
 ## [0.0.2] 2019 - 04 - 14
 ### Added
 - Environment variables
 - "page" routing
 - `home` component with challenge description
-- Created service to get user's current location
+- Created `location.service` to get user's current location
 - Created a rerouting component, `not-found` for 404 errors.
 
 ### Changed
@@ -21,3 +28,4 @@
 
 [0.0.1]:
 [0.0.2]:
+[0.0.3]:

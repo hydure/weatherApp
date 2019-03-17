@@ -1,3 +1,24 @@
-<p>
-  five-day-forecast works!
-</p>
+<div class="container">
+  <div *ngIf="!forecasts">
+      Please wait while we get the forecast for your location...
+  </div>
+  <div *ngIf="forecasts">
+    <h3>Five Day Forecasts for {{ city }}</h3>
+    <table id="forecasts">
+      <tbody>
+        <tr>
+          <th>Date and Time</th>
+          <th>Temperature (°F)</th>
+          <th>Weather</th>
+          <th>Icon</th>
+        </tr>
+        <tr *ngFor="let forecast of forecasts">
+          <td>{{ forecast.dt_txt }}</td>
+          <td>{{ forecast.main.temp }}</td>
+          <td>{{ forecast.weather[0].main }}</td>
+          <td><img src="http://openweathermap.org/img/w/{{forecast.weather[0].icon}}.png"/></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
