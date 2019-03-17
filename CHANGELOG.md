@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.0.0] 2019 - 04 - 16
+## [1.0.0] 2019 - 04 - 17
 ## Added
 - Karma testing services to every component and service `spec.ts` file to achieve the following coverage summary:
 `Statements   : 83.1% ( 59/71 )
